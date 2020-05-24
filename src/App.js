@@ -2,6 +2,8 @@ import React, { useReducer } from 'react';
 import ComponentA from './component/componentA';
 import ComponentB from './component/componentB';
 import CounterTwo from './component/componentC';
+import User from './component/componentD';
+import Counter from './component/componentE';
 
 const initialValue = 0;
 const reducer = (state, action) => {
@@ -30,6 +32,7 @@ function App() {
               <h1>local state Management</h1>
               <CounterTwo />
             </div>
+            <User userId={1} /><div><Counter /></div>
         </div>
     </CountContext.Provider>
   )
